@@ -9,6 +9,7 @@ gem 'pg'
 gem 'slim'
 gem 'slim-rails'
 gem 'therubyracer'
+gem 'twitter-bootstrap-rails'
 
 
 
