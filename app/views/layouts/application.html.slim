@@ -1,0 +1,18 @@
+doctype
+html
+  head
+    title 河北思捷
+    = stylesheet_link_tag     "application",:media => "all"
+    = javascript_include_tag  "application"
+    = csrf_meta_tags
+  body
+    = render 'layouts/header'
+    section.page-wrapper role="main" style="min-height:580px;"
+      = yield
+    
+    = render 'layouts/footer'
+    /.loading-notification Loading…
+    = render 'layouts/modal'
+    a#toTop href="#" style="display: inline; "
+	  span#toTopHover style="opacity: 0; " To Top
+

@@ -1,0 +1,845 @@
+article.content-box.minimizer
+  header
+    h2 style="padding-right: 90px; "
+      |Content Box Tab Navigation
+    nav
+      ul.tab-switch
+        li
+          a.default-tab.tooltip.current href="#tab1" original-title="Switch to next tab" style="" Graph
+        li
+          a.tooltip href="#tab2" original-title="Form styles" Form
+        li
+          a.tooltip href="#tab3" original-title="Sample tables" Table
+    /! /Content Box Tab Navigation
+    a.content-box-minimizer href="#" style="display: block; left: 344px; " title="Toggle Content Block"
+  section
+    /! Tab Content #tab1
+    #tab1.tab.default-tab style="display: block; "
+      h3 Employee Sales by Department
+      /! Sample Data table for jQuery Visualize plugin. Use attribute chart-type for different visualization
+      table.data data-chart="line" style="display: none; "
+        thead
+          tr
+            td
+            th scope="col"
+            th scope="col"
+            th scope="col"
+            th scope="col"
+            th scope="col"
+            th scope="col"
+        tbody
+          tr
+            th scope="row"
+            td 190
+            td 160
+            td 40
+            td 120
+            td 30
+            td 70
+          tr
+            th scope="row"
+            td 3
+            td 40
+            td 30
+            td 45
+            td 35
+            td 49
+          tr
+            th scope="row"
+            td 10
+            td 180
+            td 10
+            td 85
+            td 25
+            td 79
+          tr
+            th scope="row"
+            td 40
+            td 80
+            td 90
+            td 25
+            td 15
+            td 119
+      .visualize.visualize-line aria-label="Chart representing data from the table: " role="img" style="height: 240px; width: 849px; "
+        ul.visualize-labels-y style="width: 849px; height: 240px; "
+          li style="bottom: 213.77005347593584px; "
+            span.line
+            span.label style="margin-top: -9px; "
+          li style="bottom: 185.6951871657754px; "
+            span.line
+            span.label style="margin-top: -9px; "
+          li style="bottom: 157.62032085561498px; "
+            span.line
+            span.label style="margin-top: -9px; "
+          li style="bottom: 129.54545454545456px; "
+            span.line
+            span.label style="margin-top: -9px; "
+          li style="bottom: 101.47058823529412px; "
+            span.line
+            span.label style="margin-top: -9px; "
+          li style="bottom: 73.3957219251337px; "
+            span.line
+            span.label style="margin-top: -9px; "
+          li style="bottom: 45.32085561497326px; "
+            span.line
+            span.label style="margin-top: -9px; "
+          li style="bottom: 17.245989304812834px; "
+            span.line
+            span.label style="margin-top: -9px; "
+        .visualize-scroller
+          ul.visualize-labels-x style="width: 849px; height: 240px; "
+            li style="left: 15px; "
+              span.line
+              span.label style="margin-left: 0px; "
+            li style="left: 178.8px; "
+              span.line
+              span.label style="margin-left: -14px; "
+            li style="left: 342.6px; "
+              span.line
+              span.label style="margin-left: -32px; "
+            li style="left: 506.40000000000003px; "
+              span.line
+              span.label style="margin-left: -26.5px; "
+            li style="left: 670.2px; "
+              span.line
+              span.label style="margin-left: -22px; "
+            li style="left: 834px; "
+              span.line
+              span.label style="margin-left: -28px; "
+          canvas height="240" width="849"
+          .visualize-tooltip.tooltipleft style="position: absolute; display: block; z-index: 90; top: 127px; left: 343px; "
+            p.chart_tooltip
+              strong 90
+              | Kate
+          .visualize-interaction-tracker style="height: 240px; width: 849px; position: relative; z-index: 100; background-color: white; opacity: 0; "
+        .visualize-info
+          .visualize-title
+          ul.visualize-key
+            li
+              span.visualize-key-color style="background: #f29785"
+              span.visualize-key-label Mary
+            li
+              span.visualize-key-color style="background: #aff285"
+              span.visualize-key-label Tom
+            li
+              span.visualize-key-color style="background: #85d2f2"
+              span.visualize-key-label Brad
+            li
+              span.visualize-key-color style="background: #f2f085"
+              span.visualize-key-label Kate
+      /! /Sample Data
+    /! /Tab Content #tab1
+    /! Tab Content #tab2
+    #tab2.tab style="display: none; "
+      h3 Horizontal Form
+      /! Horizontal form (default)
+      form.horizontal-form
+        /! Inputs
+        /! Use class .small, .medium or .large for predefined size
+        fieldset
+          legend Legend
+          dl
+            dt
+              label Short Input
+            dd
+              input.small name="" type="text" value=""
+                p Short description of event
+            dt
+              /! You can add mandatory highlight automatically by class .mandatory or...
+              label.mandatory
+                | Medium Input
+                span *
+            dd
+              input.medium name="" type="text" value=""
+            dt
+              /! ...manually by adding <span>*</span> into label
+              label
+                | Focused Input
+                span *
+            dd
+              /! Class .focused is only required for demo
+              input.medium.focused name="" type="text" value=""
+            dt
+              label Valid Input
+            dd
+              input.medium.valid name="" type="text" value=""
+                span.valid-side-note Valid text
+            dt
+              label Invalid Input
+            dd
+              input.medium.invalid name="" type="text" value=""
+                span.invalid-side-note Invalid text
+            dt
+              label Disabled Input
+            dd
+              input.medium disabled="" name="" type="text" value="This input was disabled"
+            dt
+              label Ghost Input
+            dd
+              input.ghost.medium name="" type="text" value="This is ghost input acting like pure text"
+            dt
+              label Large input
+            dd
+              input.large name="" type="text" value=""
+                p Short description of event
+            dt
+              label Text only
+            dd.text
+              p Sometimes you need pure text in forms. Use class .text for <dd> to correct text alignment.
+            dt
+              label File input
+            dd
+              .customfile
+                span.customfile-button.button aria-hidden="true"
+                span.customfile-feedback aria-hidden="true"
+                input.fileupload.customfile-input name="" type="file"
+              p Max size 5Mb
+            dt
+              label Date input
+            dd
+              input.datepicker.hasDatepick name="" type="text" value=""
+                span.datepicker-icon  
+            dt
+              label Textarea
+            dd
+              /! Use class .wysiwyg for jQuery jWYSIWYG initiation
+              .wysiwyg
+                ul.toolbar role="menu"
+                  li.bold role="menuitem" title="Bold" unselectable="on"
+                  li.italic role="menuitem" title="Italic" unselectable="on"
+                  li.strikeThrough role="menuitem" title="Strike-through" unselectable="on"
+                  li.underline role="menuitem" title="Underline" unselectable="on"
+                  li.separator role="separator"
+                  li.justifyCenter role="menuitem" title="Justify Center" unselectable="on"
+                  li.justifyFull role="menuitem" title="Justify Full" unselectable="on"
+                  li.justifyLeft role="menuitem" title="Justify Left" unselectable="on"
+                  li.justifyRight role="menuitem" title="Justify Right" unselectable="on"
+                  li.separator role="separator"
+                  li.indent role="menuitem" title="Indent" unselectable="on"
+                  li.outdent role="menuitem" title="Outdent" unselectable="on"
+                  li.separator role="separator"
+                  li.subscript role="menuitem" title="Subscript" unselectable="on"
+                  li.superscript role="menuitem" title="Superscript" unselectable="on"
+                  li.separator role="separator"
+                  li.redo role="menuitem" title="Redo" unselectable="on"
+                  li.undo role="menuitem" title="Undo" unselectable="on"
+                  li.separator role="separator"
+                  li.insertOrderedList role="menuitem" title="Insert Ordered List" unselectable="on"
+                  li.insertUnorderedList role="menuitem" title="Insert Unordered List" unselectable="on"
+                  li.separator role="separator"
+                  li.insertHorizontalRule role="menuitem" title="Insert Horizontal Rule" unselectable="on"
+                  li.separator role="separator"
+                  li.h1 role="menuitem" title="Header 1" unselectable="on"
+                  li.h2 role="menuitem" title="Header 2" unselectable="on"
+                  li.h3 role="menuitem" title="Header 3" unselectable="on"
+                  li.separator role="separator"
+                  li.removeFormat role="menuitem" title="Remove formatting" unselectable="on"
+                div style="clear: both; "
+                  /!
+                iframe.wysiwyg-iframe frameborder="0" height="150" scrolling="no" tabindex="0"
+              textarea.wysiwyg.large cols="40" name="" rows="5" style="display: none; "
+              p Short description of event
+        fieldset.no-borders
+          legend Fieldset with .no-borders class
+          dl
+            dt.checkbox
+              label Checkbox A
+            dd
+              input name="" type="checkbox"
+            dt.checkbox
+              label Checkbox B
+            dd
+              input name="" type="checkbox"
+            dt.checkbox
+              label Checkbox C
+            dd
+              input name="" type="checkbox"
+        fieldset
+          legend Choose one of these
+          dl
+            dt.radio
+              label Option 1
+            dd
+              input name="test" type="radio"
+            dt.radio
+              label Option 2
+            dd
+              input name="test" type="radio"
+            dt.radio
+              label Option 3
+            dd
+              input name="test" type="radio"
+        fieldset
+          legend Choose one of these
+          dl
+            dt
+              label Select
+            dd
+              select name="actions"
+                option selected=""
+                option value="e"
+                option value="r"
+                option value="x"
+        button type="submit"
+        | or
+        a href="#"
+      /! /Horizontal form
+      /! Vertical form
+      h3 Vertical Form
+      form.vertical-form
+        /! Inputs
+        /! Use class .small, .medium or .large for predefined size
+        fieldset
+          legend Legend
+          dl
+            dt.clear-tm
+              label Short Input
+            dd
+              input.small name="" type="text" value=""
+                p Short description of event
+            dt
+              label Medium Input
+            dd
+              input.medium name="" type="text" value=""
+            dt
+              label Large input
+            dd
+              input.large name="" type="text" value=""
+            dt
+              label Text only
+            dd.text
+              p Sometimes you need pure text in forms. Use class .text for <dd> to correct text alignment.
+        fieldset
+          legend Check-in some of these
+          dl
+            dt.checkbox
+              label Checkbox A
+            dd.checkbox
+              input type="checkbox"
+            dt.checkbox
+              label Checkbox B
+            dd.checkbox
+              input type="checkbox"
+            dt.checkbox
+              label Checkbox C
+            dd.checkbox
+              input type="checkbox"
+        fieldset
+          legend Choose one of these
+          dl
+            dt.radio
+              label Option 1
+            dd.radio
+              input name="test" type="radio"
+            dt.radio
+              label Option 2
+            dd.radio
+              input name="test" type="radio"
+            dt.radio
+              label Option 3
+            dd.radio
+              input name="test" type="radio"
+        fieldset
+          legend Choose one of these
+          dl
+            dt.clear-tm
+              label Select
+            dd
+              select name="actions"
+                option selected=""
+                option value="e"
+                option value="r"
+                option value="x"
+        button type="submit"
+        button.gray type="submit"
+        | or
+        a href="#"
+      /! /Vertical form
+    /! /Tab Content #tab2
+    /! Tab Content #tab3
+    #tab3.tab style="display: none; "
+      h3 Table with jQuery.dataTables
+      /! Sample jQuery DataTable
+      .dataTables_wrapper
+        .dataTables_length
+          | Show
+          select size="1"
+            option value="10"
+            option value="25"
+            option value="50"
+            option value="100"
+          | entries
+        .dataTables_filter
+          | Search:
+          input type="text"
+        table.datatable
+          thead
+            tr
+              th.sorting_asc style="width: 194px; "
+              th.sorting style="width: 254px; "
+              th.sorting style="width: 231px; "
+              th.sorting style="width: 158px; "
+              th.sorting style="width: 104px; "
+          tfoot
+            tr
+              th Rendering engine
+              th Browser
+              th Platform(s)
+              th Engine version
+              th CSS grade
+          tbody
+            tr.gradeA.odd
+              td.sorting_1 Gecko
+              td Firefox 1.0
+              td Win 98+ / OSX.2+
+              td 1.7
+              td A
+            tr.gradeA.even
+              td.sorting_1 Gecko
+              td Firefox 1.5
+              td Win 98+ / OSX.2+
+              td 1.8
+              td A
+            tr.gradeA.odd
+              td.sorting_1 Gecko
+              td Firefox 2.0
+              td Win 98+ / OSX.2+
+              td 1.8
+              td A
+            tr.gradeA.even
+              td.sorting_1 Gecko
+              td Firefox 3.0
+              td Win 2k+ / OSX.3+
+              td 1.9
+              td A
+            tr.gradeA.odd
+              td.sorting_1 Gecko
+              td Camino 1.0
+              td OSX.2+
+              td 1.8
+              td A
+            tr.gradeA.even
+              td.sorting_1 Gecko
+              td Camino 1.5
+              td OSX.3+
+              td 1.8
+              td A
+            tr.gradeA.odd
+              td.sorting_1 Gecko
+              td Netscape 7.2
+              td Win 95+ / Mac OS 8.6-9.2
+              td 1.7
+              td A
+            tr.gradeA.even
+              td.sorting_1 Gecko
+              td Netscape Browser 8
+              td Win 98SE+
+              td 1.7
+              td A
+            tr.gradeA.odd
+              td.sorting_1 Gecko
+              td Netscape Navigator 9
+              td Win 98+ / OSX.2+
+              td 1.8
+              td A
+            tr.gradeA.even
+              td.sorting_1 Gecko
+              td Mozilla 1.0
+              td Win 95+ / OSX.1+
+              td 1
+              td A
+        .dataTables_info Showing 1 to 10 of 57 entries
+        .dataTables_paginate.paging_full_numbers
+          span.first.paginate_button First
+          span.previous.paginate_button Previous
+          span
+            span.paginate_active 1
+            span.paginate_button 2
+            span.paginate_button 3
+            span.paginate_button 4
+            span.paginate_button 5
+          span.next.paginate_button Next
+          span.last.paginate_button Last
+      /! /Sample jQuery DataTable
+      h3.clearfix Regular Table
+      /! Basic Table
+      form.table-form
+        table
+          thead
+            tr
+              th
+                input.check-all type="checkbox"
+              th  
+              th Rendering engine
+              th Browser
+              th Platform(s)
+              th Version
+              th Tags
+              th Actions
+          tbody
+            tr
+              td
+                input type="checkbox"
+              td
+                /! Table actions
+                a.toggle-table-switch.tooltip href="#" style="" title="Show options"
+                ul.table-switch style="display: none; margin-left: 8px; "
+                  li
+                    a href="#"
+                  li
+                    a href="#"
+                  li
+                    a href="#"
+                /! /Table actions
+              td Trident
+              td Internet Explorer 4.0
+              td Win 95+
+              td 4
+              td
+                span.tag.red High
+              td
+                ul.actions
+                  li
+                    a.view.tooltip href="#" title="View Item"
+                  li
+                    a.edit.tooltip href="#" title="Edit Item"
+                  li
+                    a.delete.tooltip href="#" title="Delete Item"
+            tr
+              td
+                input type="checkbox"
+              td
+                /! Table actions
+                a.toggle-table-switch.tooltip href="#" title="Show options"
+                ul.table-switch style="display: none; margin-left: 8px; "
+                  li
+                    a href="#"
+                  li
+                    a href="#"
+                  li
+                    a href="#"
+                /! /Table actions
+              td Trident
+              td Internet  Explorer 5.0
+              td Win 95+
+              td 5
+              td
+                span.tag.orange Medium
+              td
+                ul.actions
+                  li
+                    a.view.tooltip href="#" title="View Item"
+                  li
+                    a.edit.tooltip href="#" title="Edit Item"
+                  li
+                    a.delete.tooltip href="#" title="Delete Item"
+            tr
+              td
+                input type="checkbox"
+              td
+                /! Table actions
+                a.toggle-table-switch.tooltip href="#" title="Show options"
+                ul.table-switch style="display: none; margin-left: 8px; "
+                  li
+                    a href="#"
+                  li
+                    a href="#"
+                  li
+                    a href="#"
+                /! /Table actions
+              td Trident
+              td Internet Explorer 5.5
+              td Win 95+
+              td 5.5
+              td
+                span.tag.green Low
+              td
+                ul.actions
+                  li
+                    a.view.tooltip href="#" title="View Item"
+                  li
+                    a.edit.tooltip href="#" title="Edit Item"
+                  li
+                    a.delete.tooltip href="#" title="Delete Item"
+            tr
+              td
+                input type="checkbox"
+              td
+                /! Table actions
+                a.toggle-table-switch.tooltip href="#" title="Show options"
+                ul.table-switch style="display: none; margin-left: 8px; "
+                  li
+                    a href="#"
+                  li
+                    a href="#"
+                  li
+                    a href="#"
+                /! /Table actions
+              td Trident
+              td Internet Explorer 6
+              td Win 98+
+              td 6
+              td
+                span.tag.gray Closed
+              td
+                ul.actions
+                  li
+                    a.view.tooltip href="#" title="View Item"
+                  li
+                    a.edit.tooltip href="#" title="Edit Item"
+                  li
+                    a.delete.tooltip href="#" title="Delete Item"
+            tr
+              td
+                input type="checkbox"
+              td
+                /! Table actions
+                a.toggle-table-switch.tooltip href="#" title="Show options"
+                ul.table-switch style="display: none; margin-left: 8px; "
+                  li
+                    a href="#"
+                  li
+                    a href="#"
+                  li
+                    a href="#"
+                /! /Table actions
+              td Trident
+              td Internet Explorer 7
+              td Win XP SP2+
+              td 7
+              td
+                span.tag.blue #337
+              td
+                ul.actions
+                  li
+                    a.view.tooltip href="#" title="View Item"
+                  li
+                    a.edit.tooltip href="#" title="Edit Item"
+                  li
+                    a.delete.tooltip href="#" title="Delete Item"
+            tr
+              td
+                input type="checkbox"
+              td
+                /! Table actions
+                a.toggle-table-switch.tooltip href="#" title="Show options"
+                ul.table-switch style="display: none; margin-left: 8px; "
+                  li
+                    a href="#"
+                  li
+                    a href="#"
+                  li
+                    a href="#"
+                /! /Table actions
+              td Trident
+              td AOL browser (AOL desktop)
+              td Win XP
+              td 6
+              td
+                span.tag.gray Closed
+              td
+                ul.actions
+                  li
+                    a.view.tooltip href="#" title="View Item"
+                  li
+                    a.edit.tooltip href="#" title="Edit Item"
+                  li
+                    a.delete.tooltip href="#" title="Delete Item"
+            tr
+              td
+                input type="checkbox"
+              td
+                /! Table actions
+                a.toggle-table-switch.tooltip href="#" title="Show options"
+                ul.table-switch style="display: none; margin-left: 8px; "
+                  li
+                    a href="#"
+                  li
+                    a href="#"
+                  li
+                    a href="#"
+                /! /Table actions
+              td Gecko
+              td Firefox 1.0
+              td Win 98+ / OSX.2+
+              td 1.7
+              td
+                span.tag.gray Closed
+              td
+                ul.actions
+                  li
+                    a.view.tooltip href="#" title="View Item"
+                  li
+                    a.edit.tooltip href="#" title="Edit Item"
+                  li
+                    a.delete.tooltip href="#" title="Delete Item"
+            tr
+              td
+                input type="checkbox"
+              td
+                /! Table actions
+                a.toggle-table-switch.tooltip href="#" title="Show options"
+                ul.table-switch style="display: none; margin-left: 8px; "
+                  li
+                    a href="#"
+                  li
+                    a href="#"
+                  li
+                    a href="#"
+                /! /Table actions
+              td Gecko
+              td Firefox 1.5
+              td Win 98+ / OSX.2+
+              td 1.8
+              td
+                span.tag.gray Closed
+              td
+                ul.actions
+                  li
+                    a.view.tooltip href="#" title="View Item"
+                  li
+                    a.edit.tooltip href="#" title="Edit Item"
+                  li
+                    a.delete.tooltip href="#" title="Delete Item"
+            tr
+              td
+                input type="checkbox"
+              td
+                /! Table actions
+                a.toggle-table-switch.tooltip href="#" title="Show options"
+                ul.table-switch style="display: none; margin-left: 8px; "
+                  li
+                    a href="#"
+                  li
+                    a href="#"
+                  li
+                    a href="#"
+                /! /Table actions
+              td Gecko
+              td Firefox 2.0
+              td Win 98+ / OSX.2+
+              td 1.8
+              td
+                span.tag.black Foo
+              td
+                ul.actions
+                  li
+                    a.view.tooltip href="#" title="View Item"
+                  li
+                    a.edit.tooltip href="#" title="Edit Item"
+                  li
+                    a.delete.tooltip href="#" title="Delete Item"
+            tr
+              td
+                input type="checkbox"
+              td
+                /! Table actions
+                a.toggle-table-switch.tooltip href="#" title="Show options"
+                ul.table-switch style="display: none; margin-left: 8px; "
+                  li
+                    a href="#"
+                  li
+                    a href="#"
+                  li
+                    a href="#"
+                /! /Table actions
+              td Gecko
+              td Firefox 3.0
+              td Win 2k+ / OSX.3+
+              td 1.9
+              td
+                span.tag.gray Closed
+              td
+                ul.actions
+                  li
+                    a.view.tooltip href="#" title="View Item"
+                  li
+                    a.edit.tooltip href="#" title="Edit Item"
+                  li
+                    a.delete.tooltip href="#" title="Delete Item"
+            tr
+              td
+                input type="checkbox"
+              td
+                /! Table actions
+                a.toggle-table-switch.tooltip href="#" title="Show options"
+                ul.table-switch style="display: none; margin-left: 8px; "
+                  li
+                    a href="#"
+                  li
+                    a href="#"
+                  li
+                    a href="#"
+                /! /Table actions
+              td Gecko
+              td Camino 1.0
+              td OSX.2+
+              td 1.8
+              td
+                span.tag.gray Closed
+              td
+                ul.actions
+                  li
+                    a.view.tooltip href="#" title="View Item"
+                  li
+                    a.edit.tooltip href="#" title="Edit Item"
+                  li
+                    a.delete.tooltip href="#" title="Delete Item"
+            tr
+              td
+                input type="checkbox"
+              td
+                /! Table actions
+                a.toggle-table-switch.tooltip href="#" title="Show options"
+                ul.table-switch style="display: none; margin-left: 8px; "
+                  li
+                    a href="#"
+                  li
+                    a href="#"
+                  li
+                    a href="#"
+                /! /Table actions
+              td Gecko
+              td Camino 1.5
+              td OSX.3+
+              td 1.8
+              td
+                span.tag.gray Closed
+              td
+                ul.actions
+                  li
+                    a.view.tooltip href="#" title="View Item"
+                  li
+                    a.edit.tooltip href="#" title="Edit Item"
+                  li
+                    a.delete.tooltip href="#" title="Delete Item"
+          tfoot
+            tr
+              td colspan="8"
+                /! Pagination
+                ul.pagination
+                  li
+                    a.button.gray href="#"
+                  li
+                    a.button.gray href="#"
+                  li.hellip …
+                  li
+                    a.button.gray href="#"
+                  li
+                    a.button.gray href="#"
+                  li
+                    a.button href="#"
+                  li
+                    a.button.gray href="#"
+                  li
+                    a.button.gray href="#"
+                  li.hellip …
+                  li
+                    a.button.gray href="#"
+                  li
+                    a.button.gray href="#"
+                /! /Pagination
+      /! /Basic Table
+    /! /Tab Content #tab3
+  footer 
+  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet nisi ac risus tincidunt gravida. Cras imperdiet mattis nisl et suscipit.'
