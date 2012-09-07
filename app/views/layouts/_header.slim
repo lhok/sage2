@@ -1,9 +1,9 @@
 header#navigation
-  /! Navigation Container
+
   .navigation-wrapper
-    /! Your Project Logo
+
     a#logo href="/" title="Back to Homepage"
-    /! Main Nav Container
+
     nav#nav-main
       /! Main Navigation
       ul#nav-main-navigation
@@ -12,16 +12,15 @@ header#navigation
         li
           a.nav-main-subnav href="#submenu-1" title="解决方案" 解决方案
         li
-          a.nav-main-subnav href="#submenu-2" title="服务支持" 服务支持
+          a.nav-main-subnav href="#submenu-2" title="服务" 服务
         li
-          a.nav-main-subnav href="#submenu-3" title="新闻中心" 新闻中心
-          span.small-notification style="display: block; " 3
+          a.nav-main-subnav href="#submenu-3" title="" 技术支持
+          / span.small-notification style="display: block; " 3
         li
           a.nav-main-subnav href="#submenu-4" title="关于思捷" 关于思捷
         li
           a.nav-main-subnav href="#submenu-5" title="合作" 合作
-      /! /Main Navigation
-      /! User Navigation
+
       ul#nav-main-user
         li
           |
@@ -35,11 +34,9 @@ header#navigation
         li
           a.actions href="#" title="Logout"
             img alt="Logout" src="/assets/img/icons/icon_user_logout.png"
-      /! /User Navigation
-    /! /Main Nav Container
-    /! Sub Nav Container
+
     nav#nav-sub style="height: 0px; "
-      /! Sub Nav Block #submenu-1
+
       #submenu-1.submenu style="display: none; "
         /! Standard Sub Nav List Style
         /! Use class .menu-fit to indent list under 1st main menu item
@@ -137,10 +134,7 @@ header#navigation
             a href="#"
           li
             a href="#"
-          li
-            a.outside href="http://www.parallaq.com"
-      /! /Sub Nav Block #submenu-1
-      /! Sub Nav Block #submenu-2
+          
       #submenu-2.submenu style="display: none; "
         ul.standard-list.menu-fit
           li.standard-list-header
@@ -204,51 +198,73 @@ header#navigation
         article
           h2 Header H2
           p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et dignissim metus. Maecenas id augue ac metus tempus aliquam.
-      /! /Sub Nav Block #submenu-2
-      /! Sub Nav Block #submenu-3
+
       #submenu-3.submenu style="display: none; "
         /! Thumbnail Sub Nav List Style
         ul.thumbnail-list.menu-fit
           li.thumbnail-list-header
-            h2 Image Content
+            h2 在线技术支持
           li
             img alt="Sample Image" src="/assets/img/_sample-data/sample_image_1.png"
-              h3 Some image examples
+              h3 电子邮件
               p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et dignissim metus.
-              a.thumbnail-list-more Read more »
+              a.thumbnail-list-more 更多 »
           li
             img alt="Sample Image" src="/assets/img/_sample-data/sample_image_2.png"
-              h3 One more example
+              h3 在线服务
               p Sed pharetra placerat est suscipit sagittis. Phasellus aliquam malesuada blandit.
-              a.thumbnail-list-more Read more »
+              a.thumbnail-list-more 更多 »
         /! /Thumbnail Sub Nav List Style
         /! You can also use articles in submenu, they will automatically align to the right or use class .perex to align left
         article
-          h2 Header H2
-          p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et dignissim metus. Maecenas id augue ac metus tempus aliquam.
-      /! /Sub Nav Block #submenu-3
-      /! Sub Nav Block #submenu-4
+          h2 技术文档&白皮书
+          ul
+            br
+            li 
+              i.icon-star
+              a href="#" 服务器运维白皮书
+            br
+            li
+              i.icon-star
+              a href="#" IT运维技术白皮书
+            br
+            li 
+              i.icon-star
+              a href="#" 综合IT运维管理解决方案
+            br
+            li
+              i.icon-star
+              a href="#" 运维监控
+            br
+            li
+              i.icon-star
+              a href="#" IT服务管理
+
       #submenu-4.submenu style="display: none; "
-        /! Sub Nav Form
+
         form.submenu-form.menu-fit
           fieldset
-            legend Lorem ipsum dolor
+            legend 管理员登录
             dl
               dt.clear-tm
-                label Login
+                label 用户
               dd
                 input name="" type="text" value=""
               dt
-                label Password
+                label 密码
               dd
                 input name="" type="password" value=""
-            button.gray type="submit"
+              dt
+                button.gray type="submit" 确定
         /! /Sub Nav Form
         article
-          h2 Header H2
-          p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et dignissim metus. Maecenas id augue ac metus tempus aliquam.
-          h3 Header H3
-          p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et dignissim metus. Maecenas id augue ac metus tempus aliquam.
+          h2 思捷简介
+          p 我们的专业工程师在各项集成技能上均有超卓的表现。在每一个重要的工序上，我们均会和您有紧密的联系，务使每一个细节均能尽善尽美。
+          h3 联系方式
+          p 
+            |服务热线：0311-83869816
+            br
+            |公司地址：石家庄南二环西路35#双维商务803A
         /! Social Sub Nav List Style
         ul.social-list
           li
@@ -262,4 +278,5 @@ header#navigation
           li
             a.social.tumblr href="#"
         /! /Social Sub Nav List Style
-      /! /Sub Nav Block #submenu-4
+
+      #submenu-5.submenu style="display: none; "

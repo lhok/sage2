@@ -7,9 +7,10 @@ html
     = csrf_meta_tags
   body
     = render 'layouts/header'
-    section.page-wrapper role="main" style="min-height:580px;"
+    section style="padding-top:42px" 
+      = render 'layouts/carous'
+    section.page-wrapper role="main" style="min-height:160px;"
       = yield
-    
     = render 'layouts/footer'
     /.loading-notification Loading…
     = render 'layouts/modal'
