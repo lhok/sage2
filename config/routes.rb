@@ -1,4 +1,8 @@
 Sage::Application.routes.draw do
+  
+  resources :solutions do
+  end
+
   get "home/index"
 
   # The priority is based upon order of creation:

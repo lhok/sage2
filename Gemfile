@@ -10,6 +10,7 @@ gem 'slim'
 gem 'slim-rails'
 gem 'therubyracer'
 gem 'twitter-bootstrap-rails'
+gem 'less'
 
 
 
