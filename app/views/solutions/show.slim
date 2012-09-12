@@ -1,0 +1,12 @@
+h2 = @solution.catalog
+hr
+.row
+  .span9
+    h5 = @solution.name
+    p = raw @solution.content
+  .span3
+    .well
+      - @solutions.each do |f|
+        ul
+          li
+            = link_to f.name, solution_path(f)

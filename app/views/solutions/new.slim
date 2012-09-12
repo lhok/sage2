@@ -1,11 +1,17 @@
-= form_for @solution do |f|
-  = f.label :catalog, "Catalog"
-  = f.text_field :catalog
+.form-horizontal
+	= form_for @solution do |f|
+	  .control_group
+		  .control_label= f.label :catalog, "Catalog"
+		  .controls
+		    .input-xlarge= f.text_field :catalog
 
-  = f.label :name ,"Name"
-  = f.text_field :name
+		  .control_label= f.label :name ,"Name"
+		  .controls
+		    .input-xlarge= f.text_field :name
 
-  = f.label :content, "Content"
-  = f.text_area :content
+		  .control_label= f.label :content, "Content"
+		  .controls
+		    = f.kindeditor :content
 
-  = f.submit "Create"
+	  .form-action
+	    = f.submit "Create"

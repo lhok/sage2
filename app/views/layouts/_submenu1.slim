@@ -1,0 +1,28 @@
+- @cur_cat = ''
+- @cat = []
+- @solutions = Solution.find(:all,:order =>"catalog")
+- @solutions.each do |f|
+  - if @cur_cat == f.catalog
+    - @cur_cat = f.catalog
+  - else
+    - @cat << f.catalog
+    - @cur_cat = f.catalog
+- @cat1 = @cat[0]
+- @cat2 = @cat[1]
+- @cat3 = @cat[2]
+.row.offset3
+  .span3
+    h2 = @cat1
+    - @solutions = Solution.where("catalog = ?", @cat1)
+    - @solutions.each do |f|
+      li = link_to f.name, solution_path(f)
+  .span3
+    h2 = @cat2
+    - @solutions = Solution.where("catalog = ?", @cat2)
+    - @solutions.each do |f|
+      li = link_to f.name, solution_path(f)
+  .span3
+    h2 = @cat3
+    - @solutions = Solution.where("catalog = ?", @cat3)
+    - @solutions.each do |f|
+      li = link_to f.name, solution_path(f)
