@@ -1,0 +1,11 @@
+- @cur_cat = ''
+- @services.each do |f|
+  - if @cur_cat == f.catalog
+      li = f.name
+      - @cur_cat = f.catalog
+  - else
+    h2 = f.catalog
+    li = f.name
+    - @cur_cat = f.catalog
+br
+.btn.btn-primary= link_to "New", new_service_path

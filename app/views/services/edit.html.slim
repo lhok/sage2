@@ -1,0 +1,17 @@
+.form-horizontal
+	= form_for @service do |f|
+	  .control_group
+		  .control_label= f.label :catalog, "Catalog"
+		  .controls
+		    .input-xlarge= f.text_field :catalog
+
+		  .control_label= f.label :name ,"Name"
+		  .controls
+		    .input-xlarge= f.text_field :name
+
+		  .control_label= f.label :content, "Content"
+		  .controls
+		    = f.kindeditor :content
+
+	  .form-action
+	    = f.submit "Update"

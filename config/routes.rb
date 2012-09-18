@@ -1,13 +1,13 @@
 Sage::Application.routes.draw do
+
   # namespace :kindeditor do
   #   post "/upload" => "assets#create"
   #   get  "/filemanager" => "assets#list"
   # end
   resources :solutions do
   end
-
-
-
+  resources :services do
+  end
   get "home/index"
 
   # The priority is based upon order of creation:

@@ -1,0 +1,12 @@
+h2 = @service.catalog
+hr
+.row
+  .span9
+    h5 = @service.name
+    p = raw @service.content
+  .span3
+    .well
+      - @services.each do |f|
+        ul
+          li
+            = link_to f.name, service_path(f)
