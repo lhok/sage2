@@ -1,44 +1,26 @@
-.row.offset3
+.row.offset2
   .span9
     ul.box-list
       li.box-list-header
         h2 数据服务
-      li
-        a href="#"
-      li
-        a href="#"
-      li
-        a href="#"
-      li
-        a href="#"
-      li
-        a href="#"
+      - @service1 = Service.where("catalog = ?", "数据服务")
+      - @service1.each do |f|
+        li
+          = link_to f.name, service_path(f)
     ul.box-list
       li.box-list-header
         h2 咨询服务
-      li
-        a href="#"
-      li
-        a href="#"
-      li
-        a href="#"
-      li
-        a href="#"
-      li
-        a href="#"
+      - @service2 = Service.where("catalog = ?", "咨询服务")
+      - @service2.each do |f|
+        li
+          = link_to f.name, service_path(f)
     ul.box-list
       li.box-list-header
         h2 无忧服务
-      li
-        a href="#"
-      li
-        a href="#"
-      li
-        a href="#"
-      li
-        a href="#"
-      li
-        a href="#"
+      - @service3 = Service.where("catalog = ?", "无忧服务")
+      - @service3.each do |f|
+        li
+          = link_to f.name, service_path(f)
     /! You can also use articles in submenu, they will automatically align to the right or use class .perex to align left
     article
       h2 服务简介

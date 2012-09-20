@@ -41,83 +41,8 @@ header#navigation
       #submenu-2.submenu style="display: none; "
         = render 'layouts/submenu2'
       #submenu-3.submenu style="display: none; "
-        /! Thumbnail Sub Nav List Style
-        ul.thumbnail-list.menu-fit
-          li.thumbnail-list-header
-            h2 在线技术支持
-          li
-            img alt="Sample Image" src="/assets/img/_sample-data/sample_image_1.png"
-              h3 电子邮件
-              p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et dignissim metus.
-              a.thumbnail-list-more 更多 »
-          li
-            img alt="Sample Image" src="/assets/img/_sample-data/sample_image_2.png"
-              h3 在线服务
-              p Sed pharetra placerat est suscipit sagittis. Phasellus aliquam malesuada blandit.
-              a.thumbnail-list-more 更多 »
-        /! /Thumbnail Sub Nav List Style
-        /! You can also use articles in submenu, they will automatically align to the right or use class .perex to align left
-        article
-          h2 技术文档&白皮书
-          ul
-            br
-            li 
-              i.icon-star
-              a href="#" 服务器运维白皮书
-            br
-            li
-              i.icon-star
-              a href="#" IT运维技术白皮书
-            br
-            li 
-              i.icon-star
-              a href="#" 综合IT运维管理解决方案
-            br
-            li
-              i.icon-star
-              a href="#" 运维监控
-            br
-            li
-              i.icon-star
-              a href="#" IT服务管理
-
+        = render 'layouts/submenu3'
       #submenu-4.submenu style="display: none; "
-
-        form.submenu-form.menu-fit
-          fieldset
-            legend 管理员登录
-            dl
-              dt.clear-tm
-                label 用户
-              dd
-                input name="" type="text" value=""
-              dt
-                label 密码
-              dd
-                input name="" type="password" value=""
-              dt
-                button.gray type="submit" 确定
-        /! /Sub Nav Form
-        article
-          h2 思捷简介
-          p 我们的专业工程师在各项集成技能上均有超卓的表现。在每一个重要的工序上，我们均会和您有紧密的联系，务使每一个细节均能尽善尽美。
-          h3 联系方式
-          p 
-            |服务热线：0311-83869816
-            br
-            |公司地址：石家庄南二环西路35#双维商务803A
-        /! Social Sub Nav List Style
-        ul.social-list
-          li
-            a.social.rss href="#"
-          li
-            a.social.twitter href="#"
-          li
-            a.social.facebook href="#"
-          li
-            a.social.forrst href="#"
-          li
-            a.social.tumblr href="#"
-        /! /Social Sub Nav List Style
-
+        = render 'layouts/submenu4'
       #submenu-5.submenu style="display: none; "
+        = render 'layouts/submenu5'
