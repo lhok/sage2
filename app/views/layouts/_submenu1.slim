@@ -13,19 +13,22 @@
 .row.offset2
   .span3
     h2 = @cat1
+    hr
     - @solutions = Solution.where("catalog = ?", @cat1)
     - @solutions.each do |f|
       li = link_to f.name, solution_path(f)
-      hr
+      br
   .span3
     h2 = @cat2
+    hr
     - @solutions = Solution.where("catalog = ?", @cat2)
     - @solutions.each do |f|
       li = link_to f.name, solution_path(f)
-      hr
+      br
   .span3
     h2 = @cat3
+    hr
     - @solutions = Solution.where("catalog = ?", @cat3)
     - @solutions.each do |f|
       li = link_to f.name, solution_path(f)
-      hr
+      br
