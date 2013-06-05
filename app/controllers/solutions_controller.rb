@@ -1,4 +1,7 @@
 class SolutionsController < ApplicationController
+  USER_NAME, PASSWORD = "lrd", "lrd888"
+  before_filter :authenticate, :except => [ :index,:show ]
+
   def index
   	@solutions = Solution.find(:all,:order =>"catalog")
   end
@@ -30,5 +33,10 @@ class SolutionsController < ApplicationController
       end
     end
   end
-  
+  private
+      def authenticate
+          authenticate_or_request_with_http_basic do |user_name, password| 
+          user_name == USER_NAME && password == PASSWORD
+      end
+  end
 end

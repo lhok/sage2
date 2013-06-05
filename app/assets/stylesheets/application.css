@@ -11,6 +11,7 @@
  *= require_self
  *= require_tree .
  */
+
 .pull-right{
 	float:right;
 }
@@ -20,4 +21,10 @@ label {
 	float:left;
 	padding-left:5px;
 	vertical-align: center;
+}
+section[role=main] {
+padding-top: 20px;
+}
+.accordion div {
+margin: 5px 0 5px;
 }

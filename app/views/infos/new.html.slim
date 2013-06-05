@@ -1,0 +1,13 @@
+.form-horizontal
+	= form_for @info do |f|
+	  .control_group
+		  .control_label= f.label :title ,"Title"
+		  .controls
+		    .input-xlarge= f.text_field :title
+
+		  .control_label= f.label :content, "Content"
+		  .controls
+		    = f.kindeditor :content
+
+	  .form-action
+	    = f.submit "Create"

@@ -1,0 +1,12 @@
+.span12
+	.row
+	  .span3
+	    .well
+	      - @infos.each do |f|
+	        ul
+	          li
+	            = link_to f.title, info_path(f)
+	  .span9
+	    h3 align="center"  
+	      = @info.title
+	    p = raw @info.content

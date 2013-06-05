@@ -11,7 +11,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120918060802) do
+ActiveRecord::Schema.define(:version => 20130603070744) do
+
+  create_table "infos", :force => true do |t|
+    t.string   "title"
+    t.text     "content"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.string   "zd"
+  end
 
   create_table "kindeditor_assets", :force => true do |t|
     t.string   "asset"
@@ -20,19 +28,6 @@ ActiveRecord::Schema.define(:version => 20120918060802) do
     t.string   "file_type"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
-  end
-
-  create_table "rich_rich_files", :force => true do |t|
-    t.datetime "created_at",                                 :null => false
-    t.datetime "updated_at",                                 :null => false
-    t.string   "rich_file_file_name"
-    t.string   "rich_file_content_type"
-    t.integer  "rich_file_file_size"
-    t.datetime "rich_file_updated_at"
-    t.string   "owner_type"
-    t.integer  "owner_id"
-    t.text     "uri_cache"
-    t.string   "simplified_type",        :default => "file"
   end
 
   create_table "services", :force => true do |t|

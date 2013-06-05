@@ -1,5 +1,7 @@
 Sage::Application.routes.draw do
 
+  resources :infos
+
   # namespace :kindeditor do
   #   post "/upload" => "assets#create"
   #   get  "/filemanager" => "assets#list"

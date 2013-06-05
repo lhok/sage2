@@ -1,0 +1,9 @@
+br
+table style="font-size: 100%;"
+  - @infos=Info.order("zd").order("updated_at desc").limit(6)
+  - @infos.each do |info|
+    tr
+      td style="text-align: left;" 
+        |&nbsp;&nbsp;■&nbsp;&nbsp;
+        = link_to info.title, info_path(info)
+      td = info.updated_at

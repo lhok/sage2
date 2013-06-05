@@ -9,7 +9,7 @@ gem 'pg'
 gem 'slim'
 gem 'slim-rails'
 gem 'therubyracer'
-gem 'twitter-bootstrap-rails'
+#gem 'twitter-bootstrap-rails'
 gem 'rails_kindeditor'
 gem 'carrierwave'
 

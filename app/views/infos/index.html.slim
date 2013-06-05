@@ -1,0 +1,13 @@
+table
+  - @infos.each do |info|
+    tr
+      td = link_to info.title, info_path(info)
+      td = info.updated_at
+      /td = info.content
+      /td = link_to 'Show', info
+      /td = link_to 'Edit', edit_info_path(info)
+      /td = link_to 'Destroy', info, :confirm => 'Are you sure?', :method => :delete
+
+br
+
+= link_to 'New Info', new_info_path
